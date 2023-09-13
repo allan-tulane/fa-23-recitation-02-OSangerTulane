@@ -1,6 +1,6 @@
 # CMPS 2200  Recitation 02
 
-**Name (Team Member 1):**_________________________  
+**Name (Team Member 1):** Oliver Sanger
 **Name (Team Member 2):**_________________________
 
 In this recitation, we will investigate recurrences. 
@@ -41,6 +41,14 @@ where $W(1) = 1$.
 - [ ] 4. (2 point) Now, derive the asymptotic behavior of $W(n)$ using $f(n) = 1$, $f(n) = \log n$ and $f(n) = n$. Then, generate actual values for $W(n)$ for your code and confirm that the trends match your derivations.
 
 **TODO: your answer goes here**
+The simple_work_calc function derives the value of W(n) by reading a,b, and n values using recursion.
+The test_simple_work function will test the results of the simple_work_calc function.
+
+After correcting the test cases they became
+assert simple_work_calc(8,2,2)==32
+assert simple_work_calc(8,3,2)==65
+assert simple_work_calc(9,2,3)==19
+
 
 - [ ] 5. (4 points) Now that you have a nice way to empirically generate valuess of $W(n)$, we can look at the relationship between $a$, $b$, and $f(n)$. Suppose that $f(n) = n^c$. What is the asypmptotic behavior of $W(n)$ if $c < \log_b a$? What about $c > \log_b a$? And if they are equal? Modify `compare_work` to compare empirical values for different work functions (at several different values of $n$) to justify your answer. 
 
